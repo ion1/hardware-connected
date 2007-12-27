@@ -1,0 +1,61 @@
+HARDWARE-CONNECTED(1)
+=====================
+:Author: Johan Kiviniemi
+:Email:  debian@johan.kiviniemi.name
+
+
+NAME
+----
+hardware-connected - indicates whether given hardware is connected
+
+
+SYNOPSIS
+--------
+*hardware-connected* [-hv] [-m 'MODNAME' | 'MODALIAS_PATTERN' ...]
+
+
+DESCRIPTION
+-----------
+hardware-connected indicates whether given hardware exists in the system via
+its return code.
+
+The tool matches modalias patterns passed as command line parameters or on
+standard input against /sys/devices/**/modalias (using the fnmatch function).
+When using the verbose mode, it also prints the matching modaliases on
+standard output.
+
+Alternatively, it can query /sbin/modinfo for the modalias patterns of a
+kernel module.
+
+
+OPTIONS
+-------
+*-h*::
+  Show usage.
+
+*-v*::
+  Be verbose: print matching modaliases on standard output.
+
+*-m* 'MODNAME'::
+  Query the modalias patterns from the module 'MODNAME' using modinfo.
+
+EXAMPLES
+--------
+*$$hardware-connected -m 8139too && echo yes$$*::
+  Prints "yes" if an RTL-8139 ethernet interface is connected to the computer.
+
+*$$hardware-connected -v 'pci:*bc03sc00*'$$*::
+  Prints the modalias of each VGA adapter connected to the PCI bus.
+
+
+AUTHOR
+------
+Written by Johan Kiviniemi <mailto:debian@johan.kiviniemi.name[]>
+
+
+RESOURCES
+---------
+Web site: http://johan.kiviniemi.name/software/hardware-connected/[]
+
+Bzr branch: http://johan.kiviniemi.name/software/bzr/hardware-connected/[]
+

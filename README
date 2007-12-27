@@ -1,0 +1,18 @@
+HARDWARE-CONNECTED
+==================
+
+hardware-connected indicates whether given hardware exists in the system via
+its return code.
+
+The tool matches modalias patterns passed as command line parameters or on
+standard input against /sys/devices/**/modalias (using the fnmatch function).
+When using the verbose mode, it also prints the matching modaliases on
+standard output.
+
+Alternatively, it can query /sbin/modinfo for the modalias patterns of a
+kernel module.
+
+Please see the hardware-connected(1) man page for information.
+
+– Johan Kiviniemi <debian@johan.kiviniemi.name>
+
