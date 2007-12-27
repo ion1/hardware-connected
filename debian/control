@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 XSBC-Original-Maintainer: Johan Kiviniemi <debian@johan.kiviniemi.name>
 Build-Depends: cdbs, debhelper (>= 5)
-Standards-Version: 3.7.2
+Standards-Version: 3.7.3
 Vcs-Git: git://heh.fi/ion/hardware-connected.git
 Vcs-Browser: http://gitweb.heh.fi/?p=ion/hardware-connected.git
 
