@@ -1,0 +1,18 @@
+Source: hardware-connected
+Section: utils
+Priority: extra
+Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
+XSBC-Original-Maintainer: Johan Kiviniemi <debian@johan.kiviniemi.name>
+Build-Depends: cdbs, debhelper (>= 5)
+Standards-Version: 3.7.2
+Vcs-Git: git://heh.fi/ion/hardware-connected.git
+Vcs-Browser: http://gitweb.heh.fi/?p=ion/hardware-connected.git
+
+Package: hardware-connected
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, module-init-tools
+Description: indicates whether given hardware exists in the system
+ A module name or a list of modalias patterns is passed to this tool and its
+ return code indicates whether the hardware is connected to the system.
+ .
+ Homepage: http://johan.kiviniemi.name/software/hardware-connected/

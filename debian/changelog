@@ -1,0 +1,5 @@
+hardware-connected (0.0~git20071227a-0ubuntu0.1) hardy; urgency=low
+
+  * Initial release.
+
+ -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Thu, 27 Dec 2007 20:32:33 +0200
