@@ -1,6 +1,6 @@
 Source: hardware-connected
 Section: utils
-Priority: extra
+Priority: optional
 Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
 XSBC-Original-Maintainer: Johan Kiviniemi <debian@johan.kiviniemi.name>
 Build-Depends: cdbs, debhelper (>= 5)
