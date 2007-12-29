@@ -1,5 +1,5 @@
-hardware-connected (0.0~git20071228a-0ubuntu1) hardy; urgency=low
+hardware-connected (0.0~git20071229a-0ubuntu1) hardy; urgency=low
 
   * Initial release (LP: #178998).
 
- -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Fri, 28 Dec 2007 05:30:45 +0200
+ -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Sat, 29 Dec 2007 04:30:28 +0200
