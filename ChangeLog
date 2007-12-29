@@ -1,5 +1,10 @@
 2007-12-29  Johan Kiviniemi  <devel@johan.kiviniemi.name>
 
+	Use Unix newlines in the man page
+
+	* man/hardware-connected.1.txt: Convert from DOS to Unix newlines. I
+	  wonder how it ended up with DOS newlines in the first place?
+
 	Point to the git branch in the man page
 
 	* man/hardware-connected.1.txt: Point to the git branch instead of the
