@@ -1,65 +1,67 @@
 .\"     Title: hardware-connected
 .\"    Author: 
-.\" Generator: DocBook XSL Stylesheets v1.72.0 <http://docbook.sf.net/>
-.\"      Date: 09/17/2007
+.\" Generator: DocBook XSL Stylesheets v1.73.2 <http://docbook.sf.net/>
+.\"      Date: 12/29/2007
 .\"    Manual: 
 .\"    Source: 
 .\"
-.TH "HARDWARE\-CONNECTED" "1" "09/17/2007" "" ""
+.TH "HARDWARE\-CONNECTED" "1" "12/29/2007" "" ""
 .\" disable hyphenation
 .nh
 .\" disable justification (adjust text to left margin only)
 .ad l
 .SH "NAME"
-hardware\-connected \- indicates whether given hardware is connected
+hardware-connected - indicates whether given hardware is connected
 .SH "SYNOPSIS"
 \fBhardware\-connected\fR [\-hv] [\-m \fIMODNAME\fR | \fIMODALIAS_PATTERN\fR \&...]
 .sp
 .SH "DESCRIPTION"
-hardware\-connected indicates whether given hardware exists in the system via its return code.
+hardware\-connected indicates whether given hardware exists in the system via its return code\.
 .sp
-The tool matches modalias patterns passed as command line parameters or on standard input against /sys/devices/**/modalias (using the fnmatch function). When using the verbose mode, it also prints the matching modaliases on standard output.
+The tool matches modalias patterns passed as command line parameters or on standard input against /sys/devices/**/modalias (using the fnmatch function)\. When using the verbose mode, it also prints the matching modaliases on standard output\.
 .sp
-Alternatively, it can query /sbin/modinfo for the modalias patterns of a kernel module.
+Alternatively, it can query /sbin/modinfo for the modalias patterns of a kernel module\.
 .sp
 .SH "OPTIONS"
 .PP
 \fB\-h\fR
 .RS 4
-Show usage.
+Show usage\.
 .RE
 .PP
 \fB\-v\fR
 .RS 4
-Be verbose: print matching modaliases on standard output.
+Be verbose: print matching modaliases on standard output\.
 .RE
 .PP
 \fB\-m\fR \fIMODNAME\fR
 .RS 4
 Query the modalias patterns from the module
 \fIMODNAME\fR
-using modinfo.
+using modinfo\.
 .RE
 .SH "EXAMPLES"
 .PP
 \fBhardware\-connected \-m 8139too && echo yes\fR
 .RS 4
-Prints "yes" if an RTL\-8139 ethernet interface is connected to the computer.
+Prints "yes" if an RTL\-8139 ethernet interface is connected to the computer\.
 .RE
 .PP
-\fBhardware\-connected \-v 'pci:*bc03sc00*'\fR
+\fBhardware\-connected \-v \'pci:*bc03sc00*\'\fR
 .RS 4
-Prints the modalias of each VGA adapter connected to the PCI bus.
+Prints the modalias of each VGA adapter connected to the PCI bus\.
 .RE
 .SH "AUTHOR"
-Written by Johan Kiviniemi <\fIdebian@johan.kiviniemi.name\fR\&[1]>
+Written by Johan Kiviniemi <\fIdebian@johan\.kiviniemi\.name\fR\&[1]>
 .sp
 .SH "RESOURCES"
-Web site: \fIhttp://johan.kiviniemi.name/software/hardware\-connected/\fR
+Web site: \fIhttp://johan\.kiviniemi\.name/software/hardware\-connected/\fR
 .sp
-Bzr branch: \fIhttp://johan.kiviniemi.name/software/bzr/hardware\-connected/\fR
+Git branch: git://heh\.fi/ion/hardware\-connected\.git
 .sp
-.SH "REFERENCES"
+Git browser: \fIhttp://gitweb\.heh\.fi/?p=ion/hardware\-connected\.git\fR
+.sp
+.SH "NOTES"
 .IP " 1." 4
 debian@johan.kiviniemi.name
 .RS 4
