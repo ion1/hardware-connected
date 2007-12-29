@@ -57,5 +57,7 @@ RESOURCES
 ---------
 Web site: http://johan.kiviniemi.name/software/hardware-connected/[]
 
-Bzr branch: http://johan.kiviniemi.name/software/bzr/hardware-connected/[]
+Git branch: git://heh.fi/ion/hardware-connected.git
+
+Git browser: http://gitweb.heh.fi/?p=ion/hardware-connected.git[]
 
