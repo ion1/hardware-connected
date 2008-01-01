@@ -1,3 +1,9 @@
+hardware-connected (0.0.1-0ubuntu1) hardy; urgency=low
+
+  * Upstream released 0.0.1.
+
+ -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Tue, 01 Jan 2008 12:08:56 +0200
+
 hardware-connected (0.0~git20071228a-0ubuntu1) hardy; urgency=low
 
   * Initial release (LP: #178998).
