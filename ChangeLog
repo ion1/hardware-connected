@@ -1,3 +1,10 @@
+2008-01-02  Johan Kiviniemi  <devel@johan.kiviniemi.name>
+
+	Add licensing info to man page
+
+	* man/hardware-connected.1.txt: Add licensing info to the man page as
+	  well.
+
 2008-01-01  Johan Kiviniemi  <devel@johan.kiviniemi.name>
 
 	Release 0.0.1
