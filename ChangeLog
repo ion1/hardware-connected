@@ -1,5 +1,7 @@
 2008-01-02  Johan Kiviniemi  <devel@johan.kiviniemi.name>
 
+	Release 0.0.2
+
 	Rebuild the man page from asciidoc source
 
 	* man/hardware-connected.1: Rebuild from man/hardware-connected.1.txt.
