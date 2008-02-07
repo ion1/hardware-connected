@@ -4,3 +4,19 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/makefile.mk
 
 DEB_INSTALL_CHANGELOGS_ALL = ChangeLog
+
+.PHONY : get-orig-source
+get-orig-source :
+	which git >/dev/null
+	which pristine-tar >/dev/null
+	@set -e; \
+	  tempdir="$$(mktemp -d)"; \
+	  trap 'ret=$$?; rm -fr "$$tempdir"; exit $$ret' 0 1 2 13 15; \
+	  cd "$$tempdir"; \
+	  ( \
+	    set -x; \
+	    git clone "git://heh.fi/ion/$(DEB_SOURCE_PACKAGE).git"; \
+	    cd "$(DEB_SOURCE_PACKAGE)"; \
+	    pristine-tar checkout "$(CURDIR)/../$(DEB_SOURCE_PACKAGE)-$(DEB_UPSTREAM_VERSION).tar.gz"; \
+	    ln -fs "$(DEB_SOURCE_PACKAGE)-$(DEB_UPSTREAM_VERSION).tar.gz" "$(CURDIR)/../$(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION).orig.tar.gz"; \
+	  )
