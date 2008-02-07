@@ -1,8 +1,8 @@
-hardware-connected (0.0.2-0ubuntu1.1) UNRELEASED; urgency=low
+hardware-connected (0.0.2-0ubuntu2) hardy; urgency=low
 
-  * debian/rules: Add a get-orig-source target.
+  * debian/rules: Add a get-orig-source target (LP: #189809).
 
- -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Thu, 07 Feb 2008 05:54:18 +0200
+ -- Johan Kiviniemi <debian@johan.kiviniemi.name>  Thu, 07 Feb 2008 06:07:11 +0200
 
 hardware-connected (0.0.2-0ubuntu1) hardy; urgency=low
 
